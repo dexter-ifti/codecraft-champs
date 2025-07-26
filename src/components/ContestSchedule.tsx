@@ -13,6 +13,7 @@ const contests: Array<{
   duration: string;
   status: ContestStatus;
   difficulty: string;
+  confirmed: boolean;
 }> = [
   {
     id: 1,
@@ -21,7 +22,8 @@ const contests: Array<{
     time: "6:00 PM",
     duration: "60 mins",
     status: "upcoming",
-    difficulty: "Easy"
+    difficulty: "Easy",
+    confirmed: true
   },
   {
     id: 2,
@@ -30,25 +32,18 @@ const contests: Array<{
     time: "6:00 PM",
     duration: "60 mins",
     status: "upcoming",
-    difficulty: "Medium"
+    difficulty: "Medium",
+    confirmed: true
   },
   {
     id: 3,
-    name: "Round 3",
-    date: "Revealing Soon", 
-    time: "6:00 PM",
-    duration: "90 mins",
+    name: "Additional Rounds",
+    date: "TBD", 
+    time: "TBD",
+    duration: "TBD",
     status: "upcoming",
-    difficulty: "Medium-Hard"
-  },
-  {
-    id: 4,
-    name: "Round 4",
-    date: "Revealing Soon",
-    time: "6:00 PM", 
-    duration: "120 mins",
-    status: "upcoming",
-    difficulty: "Hard"
+    difficulty: "TBD",
+    confirmed: false
   }
 ];
 
@@ -104,24 +99,43 @@ const ContestSchedule = () => {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Multiple rounds of competitive programming challenges with increasing difficulty
           </p>
+          <div className="bg-primary/10 border border-primary/30 rounded-lg p-4 max-w-3xl mx-auto mt-6">
+            <p className="text-sm text-muted-foreground">
+              📅 <strong>Schedule Update:</strong> Additional rounds may be added based on participation and response. 
+              Stay tuned to our WhatsApp group for the latest announcements!
+            </p>
+          </div>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {contests.map((contest) => (
-            <Card key={contest.id} className="bg-gradient-card shadow-card hover:shadow-glow transition-all duration-300 border-border">
+            <Card key={contest.id} className={`bg-gradient-card shadow-card hover:shadow-glow transition-all duration-300 border-border ${!contest.confirmed ? 'opacity-80' : ''}`}>
               <CardHeader className="space-y-4">
                 <div className="flex items-start justify-between">
                   <CardTitle className="text-xl font-bold text-foreground">
                     {contest.name}
                   </CardTitle>
-                  <Badge className={`${getDifficultyColor(contest.difficulty)} text-xs`}>
-                    {contest.difficulty}
-                  </Badge>
+                  {contest.confirmed ? (
+                    <Badge className={`${getDifficultyColor(contest.difficulty)} text-xs`}>
+                      {contest.difficulty}
+                    </Badge>
+                  ) : (
+                    <Badge className="bg-gray-500/20 text-gray-400 border-gray-500/30 text-xs">
+                      TBD
+                    </Badge>
+                  )}
                 </div>
-                <Badge className={`${getStatusColor(contest.status)} w-fit flex items-center gap-1 text-xs`}>
-                  {getStatusIcon(contest.status)}
-                  {contest.status.charAt(0).toUpperCase() + contest.status.slice(1)}
-                </Badge>
+                <div className="flex gap-2">
+                  <Badge className={`${getStatusColor(contest.status)} w-fit flex items-center gap-1 text-xs`}>
+                    {getStatusIcon(contest.status)}
+                    {contest.status.charAt(0).toUpperCase() + contest.status.slice(1)}
+                  </Badge>
+                  {!contest.confirmed && (
+                    <Badge className="bg-orange-500/20 text-orange-400 border-orange-500/30 text-xs">
+                      Tentative
+                    </Badge>
+                  )}
+                </div>
               </CardHeader>
               
               <CardContent className="space-y-4">
@@ -140,18 +154,34 @@ const ContestSchedule = () => {
                   </div>
                 </div>
                 
-                <Button 
-                  variant={contest.status === "upcoming" ? "tech" : "outline_tech"} 
-                  className="w-full"
-                  disabled={contest.status === "completed"}
-                  onClick={() => {
-                    alert("Please check the whatsApp group for the contest link.");
-                  }}
-                >
-                  {contest.status === "upcoming" && "Join Contest"}
-                  {contest.status === "ongoing" && "Enter Contest"}
-                  {contest.status === "completed" && "View Results"}
-                </Button>
+                {contest.confirmed ? (
+                  <Button 
+                    variant={contest.status === "upcoming" ? "tech" : "outline_tech"} 
+                    className="w-full"
+                    disabled={contest.status === "completed"}
+                    onClick={() => {
+                      alert("Please check the WhatsApp group for the contest link.");
+                    }}
+                  >
+                    {contest.status === "upcoming" && "Join Contest"}
+                    {contest.status === "ongoing" && "Enter Contest"}
+                    {contest.status === "completed" && "View Results"}
+                  </Button>
+                ) : (
+                  <Button 
+                    variant="outline_tech" 
+                    className="w-full" 
+                    disabled
+                  >
+                    Details Coming Soon
+                  </Button>
+                )}
+                
+                {!contest.confirmed && (
+                  <p className="text-xs text-muted-foreground text-center">
+                    More rounds may be announced based on participation
+                  </p>
+                )}
               </CardContent>
             </Card>
           ))}
