@@ -21,7 +21,7 @@ const contests: Array<{
     date: "26 July 2025",
     time: "6:00 PM",
     duration: "60 mins",
-    status: "upcoming",
+    status: "completed",
     difficulty: "Easy",
     confirmed: true
   },
