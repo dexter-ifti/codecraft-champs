@@ -14,7 +14,7 @@ const Hero = () => {
   });
 
   useEffect(() => {
-    const targetDate = new Date('2025-07-26T18:00:00').getTime();
+    const targetDate = new Date('2025-08-02T18:00:00').getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
