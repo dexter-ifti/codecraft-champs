@@ -16,6 +16,19 @@ const Index = () => {
       <Rules />
       <Prizes />
       <Contact />
+      
+      {/* Footer */}
+      <footer className="bg-gradient-card border-t border-border py-8">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="text-center md:text-left">
+              <p className="text-muted-foreground">
+                © 2025 CodeCraft Championship. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
