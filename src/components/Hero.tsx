@@ -102,7 +102,17 @@ const Hero = () => {
               <Users className="w-5 h-5" />
               Register Now
             </Button>
-            <Button variant="outline_tech" size="lg" className="text-lg px-8 py-6">
+            <Button 
+              variant="outline_tech" 
+              size="lg" 
+              className="text-lg px-8 py-6" 
+              onClick={() => {
+                const leaderboardSection = document.getElementById('leaderboard');
+                if (leaderboardSection) {
+                  leaderboardSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
               <Trophy className="w-5 h-5" />
               View Leaderboard
             </Button>
