@@ -1,7 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { Trophy, Medal, Award, Search, Crown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Trophy, Medal, Award, Search, Crown, AlertTriangle, Shield } from "lucide-react";
 import { useState } from "react";
 import leaderboardData from "../data/CurrentLeaderboard.json";
 
@@ -16,6 +17,7 @@ const sortedData = leaderboardData.models
     round1Time: participant.round1_time || 0,
     round2Score: participant.round2_score || 0,
     round2Time: participant.round2_time || 0,
+    isCheating: participant.is_cheating || false,
     avatar: participant.avatar.includes('hrcdn.net') || participant.avatar.includes('gravatar') 
       ? participant.avatar 
       : participant.hacker.substring(0, 2).toUpperCase(),
@@ -72,12 +74,20 @@ const formatTime = (seconds: number) => {
 
 const Leaderboard = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [showFlagged, setShowFlagged] = useState<"all" | "flagged" | "clean">("all");
 
-  const filteredData = transformedData.filter(
-    (participant) =>
+  const filteredData = sortedData.filter((participant) => {
+    const matchesSearch = 
       participant.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      participant.rollNo.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+      participant.rollNo.toLowerCase().includes(searchTerm.toLowerCase());
+    
+    const matchesFilter = 
+      showFlagged === "all" ? true :
+      showFlagged === "flagged" ? participant.isCheating :
+      showFlagged === "clean" ? !participant.isCheating : true;
+    
+    return matchesSearch && matchesFilter;
+  });
 
   return (
     <section id="leaderboard" className="py-20 px-6 bg-gradient-hero">
@@ -89,10 +99,20 @@ const Leaderboard = () => {
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Combined results from both rounds • {sortedData.length} participants • Ranked by total score, then by time
           </p>
+          <div className="flex justify-center gap-4 mt-4 text-sm">
+            <div className="flex items-center gap-1 text-green-600">
+              <Shield className="w-4 h-4" />
+              <span>{sortedData.filter(p => !p.isCheating).length} Clean</span>
+            </div>
+            <div className="flex items-center gap-1 text-red-500">
+              <AlertTriangle className="w-4 h-4" />
+              <span>{sortedData.filter(p => p.isCheating).length} Flagged</span>
+            </div>
+          </div>
         </div>
 
-        {/* Search */}
-        <div className="mb-8">
+        {/* Search and Filters */}
+        <div className="mb-8 space-y-4">
           <div className="relative max-w-md mx-auto">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted-foreground" />
             <Input
@@ -101,6 +121,37 @@ const Leaderboard = () => {
               onChange={(e) => setSearchTerm(e.target.value)}
               className="pl-10 bg-card border-border"
             />
+          </div>
+          
+          {/* Filter Buttons */}
+          <div className="flex justify-center gap-2 flex-wrap">
+            <Button
+              variant={showFlagged === "all" ? "default" : "outline"}
+              size="sm"
+              onClick={() => setShowFlagged("all")}
+              className="flex items-center gap-2"
+            >
+              <Shield className="w-4 h-4" />
+              All ({sortedData.length})
+            </Button>
+            <Button
+              variant={showFlagged === "clean" ? "default" : "outline"}
+              size="sm"
+              onClick={() => setShowFlagged("clean")}
+              className="flex items-center gap-2"
+            >
+              <Shield className="w-4 h-4 text-green-500" />
+              Clean ({sortedData.filter(p => !p.isCheating).length})
+            </Button>
+            <Button
+              variant={showFlagged === "flagged" ? "default" : "outline"}
+              size="sm"
+              onClick={() => setShowFlagged("flagged")}
+              className="flex items-center gap-2"
+            >
+              <AlertTriangle className="w-4 h-4 text-red-500" />
+              Flagged ({sortedData.filter(p => p.isCheating).length})
+            </Button>
           </div>
         </div>
 
@@ -131,8 +182,19 @@ const Leaderboard = () => {
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg text-foreground">{participant.name}</h3>
+                  <div className="flex items-center justify-center gap-2">
+                    <h3 className="font-bold text-lg text-foreground">{participant.name}</h3>
+                    {participant.isCheating && (
+                      <AlertTriangle className="w-4 h-4 text-red-500" />
+                    )}
+                  </div>
                   <p className="text-sm text-muted-foreground">{participant.rollNo}</p>
+                  {participant.isCheating && (
+                    <Badge variant="destructive" className="text-xs mt-1">
+                      <AlertTriangle className="w-3 h-3 mr-1" />
+                      Flagged
+                    </Badge>
+                  )}
                 </div>
                 <div className="space-y-2">
                   <div className="text-2xl font-bold text-accent">{participant.totalPoints}</div>
@@ -193,8 +255,21 @@ const Leaderboard = () => {
                         </span>
                       </div>
                       <div>
-                        <div className="font-semibold text-foreground">{participant.name}</div>
+                        <div className="flex items-center gap-2">
+                          <span className="font-semibold text-foreground">{participant.name}</span>
+                          {participant.isCheating && (
+                            <AlertTriangle className="w-4 h-4 text-red-500" />
+                          )}
+                        </div>
                         <div className="text-sm text-muted-foreground">{participant.rollNo}</div>
+                        {participant.isCheating && (
+                          <div className="mt-1">
+                            <Badge variant="destructive" className="text-xs">
+                              <AlertTriangle className="w-3 h-3 mr-1" />
+                              Flagged
+                            </Badge>
+                          </div>
+                        )}
                       </div>
                     </div>
                     <div className="flex items-center gap-6">
