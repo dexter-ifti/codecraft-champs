@@ -3,32 +3,25 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Trophy, Medal, Award, Search, Crown } from "lucide-react";
 import { useState } from "react";
-import leaderboardData from "../data/Leaderboard1.json";
+import leaderboardData from "../data/CurrentLeaderboard.json";
 
-// Transform and properly rank JSON data
+// Transform merged leaderboard data (already sorted and ranked)
 const sortedData = leaderboardData.models
   .map((participant) => ({
     name: participant.hacker,
     rollNo: `ID: ${participant.hacker_id}`,
     totalPoints: participant.score,
     timeSpent: participant.time_taken,
+    round1Score: participant.round1_score || 0,
+    round1Time: participant.round1_time || 0,
+    round2Score: participant.round2_score || 0,
+    round2Time: participant.round2_time || 0,
     avatar: participant.avatar.includes('hrcdn.net') || participant.avatar.includes('gravatar') 
       ? participant.avatar 
       : participant.hacker.substring(0, 2).toUpperCase(),
-    hacker_id: participant.hacker_id
-  }))
-  .sort((a, b) => {
-    // First sort by score (descending - higher score is better)
-    if (b.totalPoints !== a.totalPoints) {
-      return b.totalPoints - a.totalPoints;
-    }
-    // If scores are equal, sort by time (ascending - faster time is better)
-    // Note: time_taken of 0 means no submission, so put them at the end
-    if (a.timeSpent === 0 && b.timeSpent === 0) return 0;
-    if (a.timeSpent === 0) return 1;
-    if (b.timeSpent === 0) return -1;
-    return a.timeSpent - b.timeSpent;
-  });
+    hacker_id: participant.hacker_id,
+    rank: participant.rank
+  }));
 
 // Add proper ranks based on the sorted order
 const transformedData = sortedData.map((participant, index) => ({
@@ -89,12 +82,12 @@ const Leaderboard = () => {
   return (
     <section id="leaderboard" className="py-20 px-6 bg-gradient-hero">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            Live Leaderboard
+                <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-4">
+            Competition Leaderboard
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Round 1 Results - CodeCraft Championship 2025
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Combined results from both rounds • {sortedData.length} participants • Ranked by total score, then by time
           </p>
         </div>
 
@@ -143,7 +136,15 @@ const Leaderboard = () => {
                 </div>
                 <div className="space-y-2">
                   <div className="text-2xl font-bold text-accent">{participant.totalPoints}</div>
-                  <div className="text-sm text-muted-foreground">Score</div>
+                  <div className="text-sm text-muted-foreground">Total Score</div>
+                  <div className="flex gap-2 justify-center text-xs">
+                    <Badge variant="outline" className="text-xs">
+                      R1: {participant.round1Score}
+                    </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      R2: {participant.round2Score}
+                    </Badge>
+                  </div>
                   <Badge className="bg-primary/20 text-primary border-primary/30">
                     {formatTime(participant.timeSpent)}
                   </Badge>
@@ -199,7 +200,15 @@ const Leaderboard = () => {
                     <div className="flex items-center gap-6">
                       <div className="text-right">
                         <div className="text-xl font-bold text-accent">{participant.totalPoints}</div>
-                        <div className="text-sm text-muted-foreground">Score</div>
+                        <div className="text-sm text-muted-foreground">Total Score</div>
+                        <div className="flex gap-1 justify-end mt-1">
+                          <Badge variant="outline" className="text-xs px-1 py-0">
+                            R1: {participant.round1Score}
+                          </Badge>
+                          <Badge variant="outline" className="text-xs px-1 py-0">
+                            R2: {participant.round2Score}
+                          </Badge>
+                        </div>
                       </div>
                       <Badge className="bg-primary/20 text-primary border-primary/30">
                         {formatTime(participant.timeSpent)}
