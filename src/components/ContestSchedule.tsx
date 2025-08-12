@@ -38,11 +38,21 @@ const contests: Array<{
   {
     id: 3,
     name: "Round 3",
-    date: "TBD", 
-    time: "TBD",
+    date: "11 August 2025", 
+    time: "1:30 PM",
+    duration: "60 mins",
+    status: "completed",
+    difficulty: "Medium",
+    confirmed: true
+  },
+  {
+    id: 4,
+    name: "Round 4",
+    date: "18 August 2025", 
+    time: "1:30 PM",
     duration: "60 mins",
     status: "upcoming",
-    difficulty: "Medium",
+    difficulty: "medium",
     confirmed: true
   },
   {
