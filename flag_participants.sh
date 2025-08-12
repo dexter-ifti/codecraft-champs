@@ -21,7 +21,6 @@ try {
     'mdarfakshadbth',
     'dilshaddd',
     'farazr2',
-    'dil_nawaj_alam',
     'nsaniya',
     'abdullahsidd2021',
     'humaidk',
@@ -30,13 +29,11 @@ try {
     'alizafatima248',
     'adarshcse',
     'aliahmad_rbl_92',
-    'Aabuzer',
     'safiraza004',
     'as37amrit',
     'batool_amina_110',
     'mohdanas13300',
     'kkshukla',
-    'amnahmad121',
     'mdaquib171',
     'freestreyler',
     'mohammadadi432',
@@ -78,3 +75,8 @@ try {
 EOF
 
 echo "Script completed!"
+
+
+# 'Aabuzer',
+# 'dil_nawaj_alam',
+# 'amnahmad121',
