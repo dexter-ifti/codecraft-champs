@@ -1,0 +1,105 @@
+{
+  "models": [
+    {
+      "hacker_id": 23652483,
+      "rank": 1,
+      "score": 100,
+      "time_taken": 3450,
+      "hacker": "faiq87846",
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg"
+    },
+    {
+      "hacker_id": 22886462,
+      "rank": 1,
+      "score": 100,
+      "time_taken": 4645,
+      "hacker": "sajidjafri86",
+      "avatar": "https://hrcdn.net/s3_pub/hr-avatars/63ea1957-4ded-48c7-a4e9-9a5eee31dacd/150x150.png"
+    },
+    {
+      "hacker_id": 22410271,
+      "rank": 3,
+      "score": 86.36,
+      "time_taken": 2028,
+      "hacker": "akhlaqhusain",
+      "avatar": "https://hrcdn.net/s3_pub/hr-avatars/93afbbb8-53a6-4946-a2e7-00997f5bdd63/150x150.png"
+    },
+    {
+      "hacker_id": 26103264,
+      "rank": 4,
+      "score": 79.09,
+      "time_taken": 5550,
+      "hacker": "husainabrar870",
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg"
+    },
+    {
+      "hacker_id": 22759075,
+      "rank": 5,
+      "score": 60,
+      "time_taken": 3718,
+      "hacker": "adeebhussain117",
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg"
+    },
+    {
+      "hacker_id": 24579267,
+      "rank": 5,
+      "score": 60,
+      "time_taken": 7279,
+      "hacker": "amnahmad121",
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg"
+    },
+    {
+      "hacker_id": 28491248,
+      "rank": 7,
+      "score": 49,
+      "time_taken": 8114,
+      "hacker": "ammarulhaq76",
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg"
+    },
+    {
+      "hacker_id": 24934937,
+      "rank": 8,
+      "score": 40,
+      "time_taken": 3372,
+      "hacker": "Jon_Snow69",
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg"
+    },
+    {
+      "hacker_id": 24662230,
+      "rank": 9,
+      "score": 28,
+      "time_taken": 5324,
+      "hacker": "darakhshanifraq1",
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg"
+    },
+    {
+      "hacker_id": 24902611,
+      "rank": 10,
+      "score": 20,
+      "time_taken": 766,
+      "hacker": "rajnikkcs",
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg"
+    },
+    {
+      "hacker_id": 27097660,
+      "rank": 11,
+      "score": 0,
+      "time_taken": 0,
+      "hacker": "dil_nawaj_alam",
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg"
+    },
+    {
+      "hacker_id": 27029862,
+      "rank": 11,
+      "score": 0,
+      "time_taken": 0,
+      "hacker": "Aabuzer",
+      "avatar": "https://hrcdn.net/s3_pub/hr-avatars/84198681-2998-4946-b708-aca54a05f0e5/150x150.png"
+    }
+  ],
+  "page": 1,
+  "total": 12,
+  "current_hacker": null,
+  "available": true,
+  "self_display": true
+}

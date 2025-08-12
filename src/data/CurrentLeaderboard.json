@@ -2,6 +2,96 @@
   "models": [
     {
       "rank": 1,
+      "hacker": "sajidjafri86",
+      "score": 300,
+      "time_taken": 8189,
+      "avatar": "https://hrcdn.net/s3_pub/hr-avatars/63ea1957-4ded-48c7-a4e9-9a5eee31dacd/150x150.png",
+      "hacker_id": 22886462,
+      "round1_score": 100,
+      "round1_time": 515,
+      "round2_score": 100,
+      "round2_time": 3029,
+      "round3_score": 100,
+      "round3_time": 4645,
+      "is_cheating": false
+    },
+    {
+      "rank": 2,
+      "hacker": "faiq87846",
+      "score": 300,
+      "time_taken": 8381,
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
+      "hacker_id": 23652483,
+      "round1_score": 100,
+      "round1_time": 1000,
+      "round2_score": 100,
+      "round2_time": 3931,
+      "round3_score": 100,
+      "round3_time": 3450,
+      "is_cheating": false
+    },
+    {
+      "rank": 3,
+      "hacker": "akhlaqhusain",
+      "score": 286.36,
+      "time_taken": 6183,
+      "avatar": "https://hrcdn.net/s3_pub/hr-avatars/93afbbb8-53a6-4946-a2e7-00997f5bdd63/150x150.png",
+      "hacker_id": 22410271,
+      "round1_score": 100,
+      "round1_time": 223,
+      "round2_score": 100,
+      "round2_time": 3932,
+      "round3_score": 86.36,
+      "round3_time": 2028,
+      "is_cheating": false
+    },
+    {
+      "rank": 4,
+      "hacker": "amnahmad121",
+      "score": 260,
+      "time_taken": 17250,
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
+      "hacker_id": 24579267,
+      "round1_score": 100,
+      "round1_time": 3320,
+      "round2_score": 100,
+      "round2_time": 6651,
+      "round3_score": 60,
+      "round3_time": 7279,
+      "is_cheating": true
+    },
+    {
+      "rank": 5,
+      "hacker": "husainabrar870",
+      "score": 239.09,
+      "time_taken": 9824,
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
+      "hacker_id": 26103264,
+      "round1_score": 100,
+      "round1_time": 794,
+      "round2_score": 60,
+      "round2_time": 3480,
+      "round3_score": 79.09,
+      "round3_time": 5550,
+      "is_cheating": false
+    },
+    {
+      "rank": 6,
+      "hacker": "adeebhussain117",
+      "score": 220,
+      "time_taken": 10192,
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
+      "hacker_id": 22759075,
+      "round1_score": 100,
+      "round1_time": 1291,
+      "round2_score": 60,
+      "round2_time": 5183,
+      "round3_score": 60,
+      "round3_time": 3718,
+      "is_cheating": false
+    },
+    {
+      "rank": 7,
       "hacker": "ahzamanis26",
       "score": 200,
       "time_taken": 2632,
@@ -11,10 +101,12 @@
       "round1_time": 1409,
       "round2_score": 100,
       "round2_time": 1223,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 2,
+      "rank": 8,
       "hacker": "mdarfakshadbth",
       "score": 200,
       "time_taken": 2889,
@@ -24,10 +116,12 @@
       "round1_time": 1278,
       "round2_score": 100,
       "round2_time": 1611,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 3,
+      "rank": 9,
       "hacker": "farazr2",
       "score": 200,
       "time_taken": 3209,
@@ -37,23 +131,12 @@
       "round1_time": 930,
       "round2_score": 100,
       "round2_time": 2279,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 4,
-      "hacker": "sajidjafri86",
-      "score": 200,
-      "time_taken": 3544,
-      "avatar": "https://hrcdn.net/s3_pub/hr-avatars/63ea1957-4ded-48c7-a4e9-9a5eee31dacd/150x150.png",
-      "hacker_id": 22886462,
-      "round1_score": 100,
-      "round1_time": 515,
-      "round2_score": 100,
-      "round2_time": 3029,
-      "is_cheating": false
-    },
-    {
-      "rank": 5,
+      "rank": 10,
       "hacker": "dilshaddd",
       "score": 200,
       "time_taken": 3628,
@@ -63,10 +146,12 @@
       "round1_time": 1734,
       "round2_score": 100,
       "round2_time": 1894,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 6,
+      "rank": 11,
       "hacker": "dil_nawaj_alam",
       "score": 200,
       "time_taken": 3812,
@@ -76,23 +161,12 @@
       "round1_time": 1208,
       "round2_score": 100,
       "round2_time": 2604,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 7,
-      "hacker": "akhlaqhusain",
-      "score": 200,
-      "time_taken": 4155,
-      "avatar": "https://hrcdn.net/s3_pub/hr-avatars/93afbbb8-53a6-4946-a2e7-00997f5bdd63/150x150.png",
-      "hacker_id": 22410271,
-      "round1_score": 100,
-      "round1_time": 223,
-      "round2_score": 100,
-      "round2_time": 3932,
-      "is_cheating": false
-    },
-    {
-      "rank": 8,
+      "rank": 12,
       "hacker": "abdullahsidd2021",
       "score": 200,
       "time_taken": 4555,
@@ -102,10 +176,12 @@
       "round1_time": 1433,
       "round2_score": 100,
       "round2_time": 3122,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 9,
+      "rank": 13,
       "hacker": "mdadeem",
       "score": 200,
       "time_taken": 4827,
@@ -115,23 +191,12 @@
       "round1_time": 765,
       "round2_score": 100,
       "round2_time": 4062,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 10,
-      "hacker": "faiq87846",
-      "score": 200,
-      "time_taken": 4931,
-      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
-      "hacker_id": 23652483,
-      "round1_score": 100,
-      "round1_time": 1000,
-      "round2_score": 100,
-      "round2_time": 3931,
-      "is_cheating": false
-    },
-    {
-      "rank": 11,
+      "rank": 14,
       "hacker": "aliahmad_rbl_92",
       "score": 200,
       "time_taken": 5069,
@@ -141,10 +206,12 @@
       "round1_time": 648,
       "round2_score": 100,
       "round2_time": 4421,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 12,
+      "rank": 15,
       "hacker": "alizafatima248",
       "score": 200,
       "time_taken": 5161,
@@ -154,10 +221,12 @@
       "round1_time": 1041,
       "round2_score": 100,
       "round2_time": 4120,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 13,
+      "rank": 16,
       "hacker": "nsaniya",
       "score": 200,
       "time_taken": 5224,
@@ -167,10 +236,12 @@
       "round1_time": 2273,
       "round2_score": 100,
       "round2_time": 2951,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 14,
+      "rank": 17,
       "hacker": "abhisheksingh137",
       "score": 200,
       "time_taken": 5660,
@@ -180,10 +251,12 @@
       "round1_time": 1593,
       "round2_score": 100,
       "round2_time": 4067,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 15,
+      "rank": 18,
       "hacker": "humaidk",
       "score": 200,
       "time_taken": 6425,
@@ -193,10 +266,12 @@
       "round1_time": 3300,
       "round2_score": 100,
       "round2_time": 3125,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 16,
+      "rank": 19,
       "hacker": "adarshcse",
       "score": 200,
       "time_taken": 6869,
@@ -206,10 +281,12 @@
       "round1_time": 2720,
       "round2_score": 100,
       "round2_time": 4149,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 17,
+      "rank": 20,
       "hacker": "Aabuzer",
       "score": 200,
       "time_taken": 7240,
@@ -219,10 +296,12 @@
       "round1_time": 2377,
       "round2_score": 100,
       "round2_time": 4863,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 18,
+      "rank": 21,
       "hacker": "mohdanas13300",
       "score": 200,
       "time_taken": 7274,
@@ -232,10 +311,12 @@
       "round1_time": 945,
       "round2_score": 100,
       "round2_time": 6329,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 19,
+      "rank": 22,
       "hacker": "safiraza004",
       "score": 200,
       "time_taken": 7700,
@@ -245,10 +326,12 @@
       "round1_time": 1592,
       "round2_score": 100,
       "round2_time": 6108,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 20,
+      "rank": 23,
       "hacker": "as37amrit",
       "score": 200,
       "time_taken": 7728,
@@ -258,10 +341,12 @@
       "round1_time": 1533,
       "round2_score": 100,
       "round2_time": 6195,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 21,
+      "rank": 24,
       "hacker": "batool_amina_110",
       "score": 200,
       "time_taken": 8121,
@@ -271,10 +356,12 @@
       "round1_time": 1913,
       "round2_score": 100,
       "round2_time": 6208,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 22,
+      "rank": 25,
       "hacker": "freestreyler",
       "score": 200,
       "time_taken": 8310,
@@ -284,10 +371,12 @@
       "round1_time": 1135,
       "round2_score": 100,
       "round2_time": 7175,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 23,
+      "rank": 26,
       "hacker": "mohammadadi432",
       "score": 200,
       "time_taken": 8798,
@@ -297,23 +386,12 @@
       "round1_time": 1501,
       "round2_score": 100,
       "round2_time": 7297,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 24,
-      "hacker": "amnahmad121",
-      "score": 200,
-      "time_taken": 9971,
-      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
-      "hacker_id": 24579267,
-      "round1_score": 100,
-      "round1_time": 3320,
-      "round2_score": 100,
-      "round2_time": 6651,
-      "is_cheating": true
-    },
-    {
-      "rank": 25,
+      "rank": 27,
       "hacker": "frazhaidr",
       "score": 200,
       "time_taken": 10337,
@@ -323,10 +401,12 @@
       "round1_time": 1375,
       "round2_score": 100,
       "round2_time": 8962,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 26,
+      "rank": 28,
       "hacker": "mdaquib171",
       "score": 180,
       "time_taken": 8747,
@@ -336,10 +416,12 @@
       "round1_time": 1625,
       "round2_score": 100,
       "round2_time": 7122,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 27,
+      "rank": 29,
       "hacker": "iqrazaheen25",
       "score": 160,
       "time_taken": 4111,
@@ -349,36 +431,27 @@
       "round1_time": 1464,
       "round2_score": 60,
       "round2_time": 2647,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 28,
-      "hacker": "husainabrar870",
-      "score": 160,
-      "time_taken": 4274,
-      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
-      "hacker_id": 26103264,
-      "round1_score": 100,
-      "round1_time": 794,
-      "round2_score": 60,
-      "round2_time": 3480,
-      "is_cheating": false
-    },
-    {
-      "rank": 29,
-      "hacker": "adeebhussain117",
-      "score": 160,
-      "time_taken": 6474,
-      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
-      "hacker_id": 22759075,
-      "round1_score": 100,
-      "round1_time": 1291,
-      "round2_score": 60,
-      "round2_time": 5183,
-      "is_cheating": false
-    },
-    {
       "rank": 30,
+      "hacker": "ammarulhaq76",
+      "score": 141.31,
+      "time_taken": 10660,
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
+      "hacker_id": 28491248,
+      "round1_score": 92.31,
+      "round1_time": 2546,
+      "round2_score": 0,
+      "round2_time": 0,
+      "round3_score": 49,
+      "round3_time": 8114,
+      "is_cheating": false
+    },
+    {
+      "rank": 31,
       "hacker": "fatimaalw",
       "score": 140,
       "time_taken": 6195,
@@ -388,10 +461,12 @@
       "round1_time": 3528,
       "round2_score": 40,
       "round2_time": 2667,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 31,
+      "rank": 32,
       "hacker": "khateeb0712",
       "score": 116.15,
       "time_taken": 3505,
@@ -401,10 +476,27 @@
       "round1_time": 1372,
       "round2_score": 20,
       "round2_time": 2133,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 32,
+      "rank": 33,
+      "hacker": "darakhshanifraq1",
+      "score": 108,
+      "time_taken": 8898,
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
+      "hacker_id": 24662230,
+      "round1_score": 80,
+      "round1_time": 3574,
+      "round2_score": 0,
+      "round2_time": 0,
+      "round3_score": 28,
+      "round3_time": 5324,
+      "is_cheating": false
+    },
+    {
+      "rank": 34,
       "hacker": "amaanjaved593",
       "score": 100,
       "time_taken": 654,
@@ -414,10 +506,12 @@
       "round1_time": 654,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 33,
+      "rank": 35,
       "hacker": "Dembla",
       "score": 100,
       "time_taken": 809,
@@ -427,10 +521,12 @@
       "round1_time": 809,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 34,
+      "rank": 36,
       "hacker": "amtabishkhan",
       "score": 100,
       "time_taken": 915,
@@ -440,10 +536,12 @@
       "round1_time": 915,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 35,
+      "rank": 37,
       "hacker": "farazmohd230",
       "score": 100,
       "time_taken": 938,
@@ -453,10 +551,12 @@
       "round1_time": 938,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 36,
+      "rank": 38,
       "hacker": "110syedkumail",
       "score": 100,
       "time_taken": 1054,
@@ -466,10 +566,12 @@
       "round1_time": 1054,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 37,
+      "rank": 39,
       "hacker": "ishancs1",
       "score": 100,
       "time_taken": 1147,
@@ -479,10 +581,12 @@
       "round1_time": 1147,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 38,
+      "rank": 40,
       "hacker": "SaadAslam17",
       "score": 100,
       "time_taken": 1529,
@@ -492,10 +596,12 @@
       "round1_time": 1529,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 39,
+      "rank": 41,
       "hacker": "Ahtesham777",
       "score": 100,
       "time_taken": 1549,
@@ -505,10 +611,12 @@
       "round1_time": 1549,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 40,
+      "rank": 42,
       "hacker": "owaisdln0786",
       "score": 100,
       "time_taken": 1821,
@@ -518,10 +626,12 @@
       "round1_time": 1821,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 41,
+      "rank": 43,
       "hacker": "amaanjvd",
       "score": 100,
       "time_taken": 1866,
@@ -531,10 +641,12 @@
       "round1_time": 1866,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 42,
+      "rank": 44,
       "hacker": "mfarazcse",
       "score": 100,
       "time_taken": 1894,
@@ -544,10 +656,12 @@
       "round1_time": 1894,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 43,
+      "rank": 45,
       "hacker": "mf2595046",
       "score": 100,
       "time_taken": 1899,
@@ -557,10 +671,12 @@
       "round1_time": 1899,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 44,
+      "rank": 46,
       "hacker": "khushinak91",
       "score": 100,
       "time_taken": 1906,
@@ -570,10 +686,12 @@
       "round1_time": 1906,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 45,
+      "rank": 47,
       "hacker": "siddiquiinzmam31",
       "score": 100,
       "time_taken": 1916,
@@ -583,10 +701,12 @@
       "round1_time": 1916,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 46,
+      "rank": 48,
       "hacker": "sayyedarslaanul1",
       "score": 100,
       "time_taken": 1972,
@@ -596,10 +716,12 @@
       "round1_time": 1972,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 47,
+      "rank": 49,
       "hacker": "coderwoder0",
       "score": 100,
       "time_taken": 2092,
@@ -609,10 +731,12 @@
       "round1_time": 2092,
       "round2_score": 0,
       "round2_time": 0,
-      "is_cheating": true
+      "round3_score": 0,
+      "round3_time": 0,
+      "is_cheating": false
     },
     {
-      "rank": 48,
+      "rank": 50,
       "hacker": "noorshik",
       "score": 100,
       "time_taken": 2211,
@@ -622,10 +746,12 @@
       "round1_time": 2211,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 49,
+      "rank": 51,
       "hacker": "salehairfbeg",
       "score": 100,
       "time_taken": 2276,
@@ -635,10 +761,12 @@
       "round1_time": 2276,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 50,
+      "rank": 52,
       "hacker": "khannubaz",
       "score": 100,
       "time_taken": 2398,
@@ -648,10 +776,12 @@
       "round1_time": 2398,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 51,
+      "rank": 53,
       "hacker": "ovaishajju0786",
       "score": 100,
       "time_taken": 2405,
@@ -661,10 +791,12 @@
       "round1_time": 2405,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 52,
+      "rank": 54,
       "hacker": "adityakumarr8318",
       "score": 100,
       "time_taken": 2456,
@@ -674,10 +806,12 @@
       "round1_time": 2456,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 53,
+      "rank": 55,
       "hacker": "wwareesha",
       "score": 100,
       "time_taken": 2468,
@@ -687,10 +821,12 @@
       "round1_time": 2468,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 54,
+      "rank": 56,
       "hacker": "hooraabbas380",
       "score": 100,
       "time_taken": 2488,
@@ -700,10 +836,12 @@
       "round1_time": 2488,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 55,
+      "rank": 57,
       "hacker": "syedwasifhussai1",
       "score": 100,
       "time_taken": 2737,
@@ -713,10 +851,12 @@
       "round1_time": 2737,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 56,
+      "rank": 58,
       "hacker": "ilmakhan11b",
       "score": 100,
       "time_taken": 2744,
@@ -726,10 +866,12 @@
       "round1_time": 2744,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 57,
+      "rank": 59,
       "hacker": "sobiyaanjum32",
       "score": 100,
       "time_taken": 2779,
@@ -739,10 +881,12 @@
       "round1_time": 2779,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 58,
+      "rank": 60,
       "hacker": "shahank1",
       "score": 100,
       "time_taken": 2875,
@@ -752,10 +896,12 @@
       "round1_time": 2875,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 59,
+      "rank": 61,
       "hacker": "adeebacs",
       "score": 100,
       "time_taken": 2993,
@@ -765,10 +911,12 @@
       "round1_time": 2993,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 60,
+      "rank": 62,
       "hacker": "shahnawzak",
       "score": 100,
       "time_taken": 3073,
@@ -778,10 +926,12 @@
       "round1_time": 3073,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 61,
+      "rank": 63,
       "hacker": "faizx0",
       "score": 100,
       "time_taken": 3080,
@@ -791,10 +941,12 @@
       "round1_time": 3080,
       "round2_score": 0,
       "round2_time": 0,
-      "is_cheating": true
+      "round3_score": 0,
+      "round3_time": 0,
+      "is_cheating": false
     },
     {
-      "rank": 62,
+      "rank": 64,
       "hacker": "syedasafiya59",
       "score": 100,
       "time_taken": 3163,
@@ -804,10 +956,12 @@
       "round1_time": 3163,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 63,
+      "rank": 65,
       "hacker": "kkshukla",
       "score": 100,
       "time_taken": 6583,
@@ -817,23 +971,12 @@
       "round1_time": 0,
       "round2_score": 100,
       "round2_time": 6583,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 64,
-      "hacker": "ammarulhaq76",
-      "score": 92.31,
-      "time_taken": 2546,
-      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
-      "hacker_id": 28491248,
-      "round1_score": 92.31,
-      "round1_time": 2546,
-      "round2_score": 0,
-      "round2_time": 0,
-      "is_cheating": false
-    },
-    {
-      "rank": 65,
+      "rank": 66,
       "hacker": "asadasjad",
       "score": 90,
       "time_taken": 5005,
@@ -843,10 +986,12 @@
       "round1_time": 862,
       "round2_score": 70,
       "round2_time": 4143,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 66,
+      "rank": 67,
       "hacker": "salikw",
       "score": 80,
       "time_taken": 2523,
@@ -856,19 +1001,8 @@
       "round1_time": 2523,
       "round2_score": 0,
       "round2_time": 0,
-      "is_cheating": false
-    },
-    {
-      "rank": 67,
-      "hacker": "darakhshanifraq1",
-      "score": 80,
-      "time_taken": 3574,
-      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
-      "hacker_id": 24662230,
-      "round1_score": 80,
-      "round1_time": 3574,
-      "round2_score": 0,
-      "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
@@ -882,10 +1016,27 @@
       "round1_time": 3494,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
       "rank": 69,
+      "hacker": "rajnikkcs",
+      "score": 70,
+      "time_taken": 3503,
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
+      "hacker_id": 24902611,
+      "round1_score": 50,
+      "round1_time": 2737,
+      "round2_score": 0,
+      "round2_time": 0,
+      "round3_score": 20,
+      "round3_time": 766,
+      "is_cheating": false
+    },
+    {
+      "rank": 70,
       "hacker": "razaainaan",
       "score": 61.54,
       "time_taken": 1311,
@@ -895,10 +1046,12 @@
       "round1_time": 1311,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 70,
+      "rank": 71,
       "hacker": "mdileepkumar578",
       "score": 60,
       "time_taken": 5000,
@@ -908,10 +1061,12 @@
       "round1_time": 0,
       "round2_score": 60,
       "round2_time": 5000,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 71,
+      "rank": 72,
       "hacker": "shadabkhanint",
       "score": 57.69,
       "time_taken": 1590,
@@ -921,10 +1076,12 @@
       "round1_time": 1590,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 72,
+      "rank": 73,
       "hacker": "karishmamaheshw2",
       "score": 50,
       "time_taken": 1893,
@@ -934,10 +1091,12 @@
       "round1_time": 1893,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 73,
+      "rank": 74,
       "hacker": "ZaidxRank20",
       "score": 50,
       "time_taken": 1998,
@@ -947,10 +1106,12 @@
       "round1_time": 1998,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 74,
+      "rank": 75,
       "hacker": "aliahus",
       "score": 50,
       "time_taken": 2514,
@@ -960,10 +1121,12 @@
       "round1_time": 2514,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 75,
+      "rank": 76,
       "hacker": "szaid0058",
       "score": 50,
       "time_taken": 2568,
@@ -973,19 +1136,8 @@
       "round1_time": 2568,
       "round2_score": 0,
       "round2_time": 0,
-      "is_cheating": false
-    },
-    {
-      "rank": 76,
-      "hacker": "rajnikkcs",
-      "score": 50,
-      "time_taken": 2737,
-      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
-      "hacker_id": 24902611,
-      "round1_score": 50,
-      "round1_time": 2737,
-      "round2_score": 0,
-      "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
@@ -999,6 +1151,8 @@
       "round1_time": 3262,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
@@ -1012,10 +1166,27 @@
       "round1_time": 3335,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
       "rank": 79,
+      "hacker": "Jon_Snow69",
+      "score": 40,
+      "time_taken": 3372,
+      "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
+      "hacker_id": 24934937,
+      "round1_score": 0,
+      "round1_time": 0,
+      "round2_score": 0,
+      "round2_time": 0,
+      "round3_score": 40,
+      "round3_time": 3372,
+      "is_cheating": false
+    },
+    {
+      "rank": 80,
       "hacker": "ayaankhan2",
       "score": 30,
       "time_taken": 2271,
@@ -1025,10 +1196,12 @@
       "round1_time": 2271,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 80,
+      "rank": 81,
       "hacker": "ruhansiddiqui2",
       "score": 30,
       "time_taken": 2373,
@@ -1038,10 +1211,12 @@
       "round1_time": 2373,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 81,
+      "rank": 82,
       "hacker": "raheemshaikh193",
       "score": 20,
       "time_taken": 513,
@@ -1051,10 +1226,12 @@
       "round1_time": 513,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 82,
+      "rank": 83,
       "hacker": "nabeelahh",
       "score": 20,
       "time_taken": 514,
@@ -1064,10 +1241,12 @@
       "round1_time": 514,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 83,
+      "rank": 84,
       "hacker": "umrahmeraj4",
       "score": 20,
       "time_taken": 864,
@@ -1077,10 +1256,12 @@
       "round1_time": 864,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 84,
+      "rank": 85,
       "hacker": "farazalamprince",
       "score": 20,
       "time_taken": 1725,
@@ -1090,10 +1271,12 @@
       "round1_time": 1725,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 85,
+      "rank": 86,
       "hacker": "tausheer",
       "score": 20,
       "time_taken": 2281,
@@ -1103,10 +1286,12 @@
       "round1_time": 0,
       "round2_score": 20,
       "round2_time": 2281,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 86,
+      "rank": 87,
       "hacker": "Anonymouse_7",
       "score": 20,
       "time_taken": 2924,
@@ -1116,10 +1301,12 @@
       "round1_time": 0,
       "round2_score": 20,
       "round2_time": 2924,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": true
     },
     {
-      "rank": 87,
+      "rank": 88,
       "hacker": "zkhancse",
       "score": 0,
       "time_taken": 0,
@@ -1129,10 +1316,12 @@
       "round1_time": 0,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 88,
+      "rank": 89,
       "hacker": "ng2151783",
       "score": 0,
       "time_taken": 0,
@@ -1142,10 +1331,12 @@
       "round1_time": 0,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 89,
+      "rank": 90,
       "hacker": "adityashk",
       "score": 0,
       "time_taken": 0,
@@ -1155,10 +1346,12 @@
       "round1_time": 0,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 90,
+      "rank": 91,
       "hacker": "yashabzehrazaidi",
       "score": 0,
       "time_taken": 0,
@@ -1168,10 +1361,12 @@
       "round1_time": 0,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 91,
+      "rank": 92,
       "hacker": "prateeksisodiya2",
       "score": 0,
       "time_taken": 0,
@@ -1181,10 +1376,12 @@
       "round1_time": 0,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 92,
+      "rank": 93,
       "hacker": "mohdarshh",
       "score": 0,
       "time_taken": 0,
@@ -1194,10 +1391,12 @@
       "round1_time": 0,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 93,
+      "rank": 94,
       "hacker": "meharcse",
       "score": 0,
       "time_taken": 0,
@@ -1207,10 +1406,12 @@
       "round1_time": 0,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 94,
+      "rank": 95,
       "hacker": "madhuch1",
       "score": 0,
       "time_taken": 0,
@@ -1220,10 +1421,12 @@
       "round1_time": 0,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 95,
+      "rank": 96,
       "hacker": "dmohd6148",
       "score": 0,
       "time_taken": 0,
@@ -1233,10 +1436,12 @@
       "round1_time": 0,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 96,
+      "rank": 97,
       "hacker": "mirzamuss",
       "score": 0,
       "time_taken": 0,
@@ -1246,10 +1451,12 @@
       "round1_time": 0,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 97,
+      "rank": 98,
       "hacker": "nusratsiddiqui11",
       "score": 0,
       "time_taken": 0,
@@ -1259,10 +1466,12 @@
       "round1_time": 0,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     },
     {
-      "rank": 98,
+      "rank": 99,
       "hacker": "sabbaperween14",
       "score": 0,
       "time_taken": 0,
@@ -1272,11 +1481,13 @@
       "round1_time": 0,
       "round2_score": 0,
       "round2_time": 0,
+      "round3_score": 0,
+      "round3_time": 0,
       "is_cheating": false
     }
   ],
   "page": 1,
-  "total": 98,
+  "total": 99,
   "current_hacker": {},
   "available": true,
   "self_display": true
