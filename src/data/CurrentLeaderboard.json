@@ -58,7 +58,7 @@
       "round2_time": 6651,
       "round3_score": 60,
       "round3_time": 7279,
-      "is_cheating": true
+      "is_cheating": false
     },
     {
       "rank": 5,
@@ -163,7 +163,7 @@
       "round2_time": 2604,
       "round3_score": 0,
       "round3_time": 0,
-      "is_cheating": true
+      "is_cheating": false
     },
     {
       "rank": 12,
@@ -298,7 +298,7 @@
       "round2_time": 4863,
       "round3_score": 0,
       "round3_time": 0,
-      "is_cheating": true
+      "is_cheating": false
     },
     {
       "rank": 21,
