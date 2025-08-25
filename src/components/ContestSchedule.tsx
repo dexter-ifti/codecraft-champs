@@ -51,12 +51,22 @@ const contests: Array<{
     date: "18 August 2025", 
     time: "1:30 PM",
     duration: "60 mins",
-    status: "upcoming",
+    status: "completed",
     difficulty: "medium",
     confirmed: true
   },
   {
-    id: 4,
+    id: 5,
+    name: "Round 5",
+    date: "25 August 2025", 
+    time: "1:30 PM",
+    duration: "60 mins",
+    status: "ongoing",
+    difficulty: "meduim",
+    confirmed: true
+  },
+  {
+    id: 6,
     name: "Additional Rounds",
     date: "TBD", 
     time: "TBD",
