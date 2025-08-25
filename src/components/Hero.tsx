@@ -4,8 +4,10 @@ import { Clock, Users, Trophy, Calendar } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
 import qrImage from "@/assets/qr.png";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -107,7 +109,7 @@ const Hero = () => {
               size="lg" 
               className="text-lg px-8 py-6" 
               onClick={() => {
-                window.location.href = '/leaderboard';
+                navigate('/leaderboard');
               }}
             >
               <Trophy className="w-5 h-5" />
