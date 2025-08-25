@@ -19,6 +19,8 @@ const sortedData = leaderboardData.models
     round2Time: participant.round2_time || 0,
     round3Score: participant.round3_score || 0,
     round3Time: participant.round3_time || 0,
+    round4Score: participant.round4_score || 0,
+    round4Time: participant.round4_time || 0,
     isCheating: participant.is_cheating || false,
     avatar: participant.avatar.includes('hrcdn.net') || participant.avatar.includes('gravatar') 
       ? participant.avatar 
@@ -99,7 +101,7 @@ const Leaderboard = () => {
             Competition Leaderboard
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Combined results from all three rounds • {sortedData.length} participants • Ranked by total score, then by time
+            Combined results from all four rounds • {sortedData.length} participants • Ranked by total score, then by time
           </p>
           <div className="flex justify-center gap-4 mt-4 text-sm">
             <div className="flex items-center gap-1 text-green-600">
@@ -211,6 +213,9 @@ const Leaderboard = () => {
                     <Badge variant="outline" className="text-xs">
                       R3: {participant.round3Score}
                     </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      R4: {participant.round4Score}
+                    </Badge>
                   </div>
                   <Badge className="bg-primary/20 text-primary border-primary/30">
                     {formatTime(participant.timeSpent)}
@@ -290,6 +295,9 @@ const Leaderboard = () => {
                           </Badge>
                           <Badge variant="outline" className="text-xs px-1 py-0">
                             R3: {participant.round3Score}
+                          </Badge>
+                          <Badge variant="outline" className="text-xs px-1 py-0">
+                            R4: {participant.round4Score}
                           </Badge>
                         </div>
                       </div>
