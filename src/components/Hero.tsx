@@ -14,7 +14,7 @@ const Hero = () => {
   });
 
   useEffect(() => {
-    const targetDate = new Date('2025-08-18T13:30:00').getTime();
+    const targetDate = new Date('2025-08-25T13:30:00').getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -107,10 +107,7 @@ const Hero = () => {
               size="lg" 
               className="text-lg px-8 py-6" 
               onClick={() => {
-                const leaderboardSection = document.getElementById('leaderboard');
-                if (leaderboardSection) {
-                  leaderboardSection.scrollIntoView({ behavior: 'smooth' });
-                }
+                window.location.href = '/leaderboard';
               }}
             >
               <Trophy className="w-5 h-5" />
