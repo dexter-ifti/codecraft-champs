@@ -1,0 +1,73 @@
+{
+    "models": [
+        {
+            "rank": 1,
+            "hacker": "akhlaqhusain",
+            "score": 100,
+            "time_taken": 1518,
+            "avatar": "https://hrcdn.net/s3_pub/hr-avatars/93afbbb8-53a6-4946-a2e7-00997f5bdd63/150x150.png",
+            "hacker_id": 22410271
+        },
+        {
+            "rank": 1,
+            "hacker": "sajidjafri86",
+            "score": 100,
+            "time_taken": 3256,
+            "avatar": "https://hrcdn.net/s3_pub/hr-avatars/63ea1957-4ded-48c7-a4e9-9a5eee31dacd/150x150.png",
+            "hacker_id": 22886462
+        },
+        {
+            "rank": 1,
+            "hacker": "husainabrar870",
+            "score": 100,
+            "time_taken": 3606,
+            "avatar": "https://hrcdn.net/s3_pub/hr-avatars/d8c44833-5dbf-4282-a2cc-26249498328a/150x150.png",
+            "hacker_id": 26103264
+        },
+        {
+            "rank": 4,
+            "hacker": "amnahmad121",
+            "score": 60,
+            "time_taken": 3172,
+            "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
+            "hacker_id": 24579267
+        },
+        {
+            "rank": 5,
+            "hacker": "ammarulhaq76",
+            "score": 40,
+            "time_taken": 3170,
+            "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
+            "hacker_id": 28491248
+        },
+        {
+            "rank": 6,
+            "hacker": "Jon_Snow69",
+            "score": 30,
+            "time_taken": 1825,
+            "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
+            "hacker_id": 24934937
+        },
+        {
+            "rank": 6,
+            "hacker": "Aabuzer",
+            "score": 30,
+            "time_taken": 2932,
+            "avatar": "https://hrcdn.net/s3_pub/hr-avatars/84198681-2998-4946-b708-aca54a05f0e5/150x150.png",
+            "hacker_id": 27029862
+        },
+        {
+            "rank": 8,
+            "hacker": "abdullahqidwai7",
+            "score": 4,
+            "time_taken": 1778,
+            "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg",
+            "hacker_id": 26119039
+        }
+    ],
+    "page": 1,
+    "total": 8,
+    "current_hacker": null,
+    "available": true,
+    "self_display": true
+}
