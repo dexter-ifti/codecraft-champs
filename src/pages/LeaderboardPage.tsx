@@ -13,9 +13,10 @@ const participants = leaderboardData.models.map(p => ({
   round2_score: p.round2_score || 0,
   round3_score: p.round3_score || 0,
   round4_score: p.round4_score || 0,
+  round5_score: p.round5_score || 0,
 }));
 
-const roundWise = (round: 1 | 2 | 3 | 4) => {
+const roundWise = (round: 1 | 2 | 3 | 4 | 5) => {
   const scoreKey = `round${round}_score` as const;
   const timeKey = `round${round}_time` as const;
   return participants
@@ -39,6 +40,7 @@ const round1 = roundWise(1);
 const round2 = roundWise(2);
 const round3 = roundWise(3);
 const round4 = roundWise(4);
+const round5 = roundWise(5);
 
 const LeaderboardPage = () => {
   return (
@@ -52,12 +54,13 @@ const LeaderboardPage = () => {
         <h1 className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent">Leaderboard Center</h1>
         <p className="text-muted-foreground max-w-2xl">View cumulative and round-wise rankings. Cumulative ranks are based on total score across all rounds (time as tie-breaker). Round tabs show standalone performance.</p>
         <Tabs defaultValue="cumulative" className="w-full">
-          <TabsList className="grid grid-cols-5 max-w-2xl">
+          <TabsList className="grid grid-cols-6 max-w-3xl">
             <TabsTrigger value="cumulative">Cumulative</TabsTrigger>
             <TabsTrigger value="round1">Round 1</TabsTrigger>
             <TabsTrigger value="round2">Round 2</TabsTrigger>
             <TabsTrigger value="round3">Round 3</TabsTrigger>
             <TabsTrigger value="round4">Round 4</TabsTrigger>
+            <TabsTrigger value="round5">Round 5</TabsTrigger>
           </TabsList>
           <TabsContent value="cumulative">
             <Leaderboard />
@@ -73,6 +76,9 @@ const LeaderboardPage = () => {
           </TabsContent>
           <TabsContent value="round4">
             <RoundTable title="Round 4" data={round4} />
+          </TabsContent>
+          <TabsContent value="round5">
+            <RoundTable title="Round 5" data={round5} />
           </TabsContent>
         </Tabs>
       </div>
