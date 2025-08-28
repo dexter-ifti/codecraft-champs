@@ -52,7 +52,7 @@ const contests: Array<{
     time: "1:30 PM",
     duration: "60 mins",
     status: "completed",
-    difficulty: "medium",
+    difficulty: "Medium",
     confirmed: true
   },
   {
@@ -62,7 +62,7 @@ const contests: Array<{
     time: "1:30 PM",
     duration: "60 mins",
     status: "completed",
-    difficulty: "medium",
+    difficulty: "Medium",
     confirmed: true
   },
   {
@@ -72,7 +72,7 @@ const contests: Array<{
     time: "1:30 PM",
     duration: "60 mins",
     status: "upcoming",
-    difficulty: "medium",
+    difficulty: "Medium",
     confirmed: true
   },
   {
