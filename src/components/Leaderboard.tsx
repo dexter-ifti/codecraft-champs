@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Trophy, Medal, Award, Search, Crown, AlertTriangle, Shield } from "lucide-react";
 import { useState } from "react";
-import leaderboardData from "../data/CurrentLeaderboard.json";
+import leaderboardData from "../data/Leaderboard_Rounds_3_7.json";
 
 // Transform merged leaderboard data (already sorted and ranked)
 const sortedData = leaderboardData.models
@@ -13,17 +13,17 @@ const sortedData = leaderboardData.models
     rollNo: `ID: ${participant.hacker_id}`,
     totalPoints: participant.score,
     timeSpent: participant.time_taken,
-    round1Score: participant.round1_score || 0,
-    round1Time: participant.round1_time || 0,
-    round2Score: participant.round2_score || 0,
-    round2Time: participant.round2_time || 0,
     round3Score: participant.round3_score || 0,
     round3Time: participant.round3_time || 0,
     round4Score: participant.round4_score || 0,
     round4Time: participant.round4_time || 0,
-    round5Score: participant.round5_score || 0,
-    round5Time: participant.round5_time || 0,
-    isCheating: participant.is_cheating || false,
+  round5Score: participant.round5_score || 0,
+  round5Time: participant.round5_time || 0,
+  round6Score: participant.round6_score || 0,
+  round6Time: participant.round6_time || 0,
+  round7Score: participant.round7_score || 0,
+  round7Time: participant.round7_time || 0,
+  isCheating: (participant as any).is_cheating || false,
     avatar: participant.avatar.includes('hrcdn.net') || participant.avatar.includes('gravatar') 
       ? participant.avatar 
       : participant.hacker.substring(0, 2).toUpperCase(),
@@ -103,7 +103,7 @@ const Leaderboard = () => {
             Competition Leaderboard
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Combined results from all five rounds • {sortedData.length} participants • Ranked by total score, then by time
+            Combined results from all seven rounds • {sortedData.length} participants • Ranked by total score, then by time
           </p>
           <div className="flex justify-center gap-4 mt-4 text-sm">
             <div className="flex items-center gap-1 text-green-600">
@@ -207,12 +207,6 @@ const Leaderboard = () => {
                   <div className="text-sm text-muted-foreground">Total Score</div>
                   <div className="flex gap-2 justify-center text-xs">
                     <Badge variant="outline" className="text-xs">
-                      R1: {participant.round1Score}
-                    </Badge>
-                    <Badge variant="outline" className="text-xs">
-                      R2: {participant.round2Score}
-                    </Badge>
-                    <Badge variant="outline" className="text-xs">
                       R3: {participant.round3Score}
                     </Badge>
                     <Badge variant="outline" className="text-xs">
@@ -220,6 +214,12 @@ const Leaderboard = () => {
                     </Badge>
                     <Badge variant="outline" className="text-xs">
                       R5: {participant.round5Score}
+                    </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      R6: {participant.round6Score}
+                    </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      R7: {participant.round7Score}
                     </Badge>
                   </div>
                   <Badge className="bg-primary/20 text-primary border-primary/30">
@@ -293,12 +293,6 @@ const Leaderboard = () => {
                         <div className="text-sm text-muted-foreground">Total Score</div>
                         <div className="flex gap-1 justify-end mt-1">
                           <Badge variant="outline" className="text-xs px-1 py-0">
-                            R1: {participant.round1Score}
-                          </Badge>
-                          <Badge variant="outline" className="text-xs px-1 py-0">
-                            R2: {participant.round2Score}
-                          </Badge>
-                          <Badge variant="outline" className="text-xs px-1 py-0">
                             R3: {participant.round3Score}
                           </Badge>
                           <Badge variant="outline" className="text-xs px-1 py-0">
@@ -306,6 +300,12 @@ const Leaderboard = () => {
                           </Badge>
                           <Badge variant="outline" className="text-xs px-1 py-0">
                             R5: {participant.round5Score}
+                          </Badge>
+                          <Badge variant="outline" className="text-xs px-1 py-0">
+                            R6: {participant.round6Score}
+                          </Badge>
+                          <Badge variant="outline" className="text-xs px-1 py-0">
+                            R7: {participant.round7Score}
                           </Badge>
                         </div>
                       </div>
