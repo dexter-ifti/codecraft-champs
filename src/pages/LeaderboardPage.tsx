@@ -1,7 +1,7 @@
 import Leaderboard from "@/components/Leaderboard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import leaderboardData from "@/data/CurrentLeaderboard.json";
+import leaderboardData from "@/data/Leaderboard_Rounds_3_7.json";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -9,14 +9,14 @@ import { Link } from "react-router-dom";
 // Prepare round-wise data
 const participants = leaderboardData.models.map(p => ({
   ...p,
-  round1_score: p.round1_score || 0,
-  round2_score: p.round2_score || 0,
   round3_score: p.round3_score || 0,
   round4_score: p.round4_score || 0,
   round5_score: p.round5_score || 0,
+  round6_score: p.round6_score || 0,
+  round7_score: p.round7_score || 0,
 }));
 
-const roundWise = (round: 1 | 2 | 3 | 4 | 5) => {
+const roundWise = (round: 1 | 2 | 3 | 4 | 5 | 6 | 7) => {
   const scoreKey = `round${round}_score` as const;
   const timeKey = `round${round}_time` as const;
   return participants
@@ -27,7 +27,7 @@ const roundWise = (round: 1 | 2 | 3 | 4 | 5) => {
       score: p[scoreKey],
       time_taken: p[timeKey] || 0,
       avatar: p.avatar,
-      is_cheating: p.is_cheating,
+      is_cheating: p.is_cheating || false,
     }))
     .sort((a, b) => {
       if (b.score !== a.score) return b.score - a.score;
@@ -41,6 +41,8 @@ const round2 = roundWise(2);
 const round3 = roundWise(3);
 const round4 = roundWise(4);
 const round5 = roundWise(5);
+const round6 = roundWise(6);
+const round7 = roundWise(7);
 
 const LeaderboardPage = () => {
   return (
@@ -56,20 +58,14 @@ const LeaderboardPage = () => {
         <Tabs defaultValue="cumulative" className="w-full">
           <TabsList className="grid grid-cols-6 max-w-3xl">
             <TabsTrigger value="cumulative">Cumulative</TabsTrigger>
-            <TabsTrigger value="round1">Round 1</TabsTrigger>
-            <TabsTrigger value="round2">Round 2</TabsTrigger>
             <TabsTrigger value="round3">Round 3</TabsTrigger>
             <TabsTrigger value="round4">Round 4</TabsTrigger>
             <TabsTrigger value="round5">Round 5</TabsTrigger>
+            <TabsTrigger value="round6">Round 6</TabsTrigger>
+            <TabsTrigger value="round7">Round 7</TabsTrigger>
           </TabsList>
           <TabsContent value="cumulative">
             <Leaderboard />
-          </TabsContent>
-          <TabsContent value="round1">
-            <RoundTable title="Round 1" data={round1} />
-          </TabsContent>
-          <TabsContent value="round2">
-            <RoundTable title="Round 2" data={round2} />
           </TabsContent>
           <TabsContent value="round3">
             <RoundTable title="Round 3" data={round3} />
@@ -79,6 +75,12 @@ const LeaderboardPage = () => {
           </TabsContent>
           <TabsContent value="round5">
             <RoundTable title="Round 5" data={round5} />
+          </TabsContent>
+          <TabsContent value="round6">
+            <RoundTable title="Round 6" data={round6} />
+          </TabsContent>
+          <TabsContent value="round7">
+            <RoundTable title="Round 7" data={round7} />
           </TabsContent>
         </Tabs>
       </div>
