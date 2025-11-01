@@ -71,19 +71,29 @@ const contests: Array<{
     date: "01 September 2025", 
     time: "1:30 PM",
     duration: "60 mins",
-    status: "upcoming",
+    status: "completed",
     difficulty: "Medium",
     confirmed: true
   },
   {
     id: 7,
-    name: "Additional Rounds",
-    date: "TBD", 
-    time: "TBD",
-    duration: "TBD",
+    name: "Round 7",
+    date: "22 September 2025", 
+    time: "1:30 PM",
+    duration: "60 mins",
+    status: "completed",
+    difficulty: "medium",
+    confirmed: true
+  },
+  {
+    id: 8,
+    name: "CodeCraft Champs Finale",
+    date: "6 November 2025", 
+    time: "1:30 PM",
+    duration: "60 mins",
     status: "upcoming",
-    difficulty: "TBD",
-    confirmed: false
+    difficulty: "medium",
+    confirmed: true
   }
 ];
 
