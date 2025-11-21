@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Trophy, Medal, Award, Search, Crown, AlertTriangle, Shield } from "lucide-react";
 import { useState } from "react";
-import leaderboardData from "../data/Leaderboard_Rounds_3_7.json";
+import leaderboardData from "../data/Leaderboard_Rounds_3_8.json";
 
 // Transform merged leaderboard data (already sorted and ranked)
 const sortedData = leaderboardData.models
@@ -19,10 +19,12 @@ const sortedData = leaderboardData.models
     round4Time: participant.round4_time || 0,
   round5Score: participant.round5_score || 0,
   round5Time: participant.round5_time || 0,
-  round6Score: participant.round6_score || 0,
-  round6Time: participant.round6_time || 0,
-  round7Score: participant.round7_score || 0,
-  round7Time: participant.round7_time || 0,
+    round6Score: participant.round6_score || 0,
+    round6Time: participant.round6_time || 0,
+    round7Score: participant.round7_score || 0,
+    round7Time: participant.round7_time || 0,
+    round8Score: participant.round8_score || 0,
+    round8Time: participant.round8_time || 0,
   isCheating: (participant as any).is_cheating || false,
     avatar: participant.avatar.includes('hrcdn.net') || participant.avatar.includes('gravatar') 
       ? participant.avatar 
@@ -103,7 +105,7 @@ const Leaderboard = () => {
             Competition Leaderboard
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Combined results from all seven rounds • {sortedData.length} participants • Ranked by total score, then by time
+            Combined results from all eight rounds • {sortedData.length} participants • Ranked by total score, then by time
           </p>
           <div className="flex justify-center gap-4 mt-4 text-sm">
             <div className="flex items-center gap-1 text-green-600">
@@ -221,6 +223,9 @@ const Leaderboard = () => {
                     <Badge variant="outline" className="text-xs">
                       R7: {participant.round7Score}
                     </Badge>
+                    <Badge variant="outline" className="text-xs">
+                      R8: {participant.round8Score}
+                    </Badge>
                   </div>
                   <Badge className="bg-primary/20 text-primary border-primary/30">
                     {formatTime(participant.timeSpent)}
@@ -306,6 +311,9 @@ const Leaderboard = () => {
                           </Badge>
                           <Badge variant="outline" className="text-xs px-1 py-0">
                             R7: {participant.round7Score}
+                          </Badge>
+                          <Badge variant="outline" className="text-xs px-1 py-0">
+                            R8: {participant.round8Score}
                           </Badge>
                         </div>
                       </div>
