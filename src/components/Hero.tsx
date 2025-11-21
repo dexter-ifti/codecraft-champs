@@ -56,7 +56,7 @@ const Hero = () => {
             </h1>
             <div className="flex items-center justify-center gap-2 text-xl md:text-2xl text-muted-foreground">
               <Trophy className="w-6 h-6 text-accent" />
-              <span>A DSA Contest Series for Campus Placements</span>
+              <span>Competition concluded — thanks to everyone who participated</span>
             </div>
           </div>
 
@@ -68,28 +68,20 @@ const Hero = () => {
           {/* Event Start */}
           <div className="flex items-center justify-center gap-3 text-lg">
             <Calendar className="w-5 h-5 text-primary" />
-            <span className="text-foreground font-medium">Starting from 26th July 2025</span>
+            <span className="text-foreground font-medium">Championship concluded — results finalized</span>
           </div>
 
           {/* Countdown Timer */}
           <Card className="max-w-2xl mx-auto p-6 bg-gradient-card shadow-card">
-            <div className="space-y-4">
+            <div className="space-y-4 text-center">
               <div className="flex items-center justify-center gap-2 text-lg font-semibold text-primary">
                 <Clock className="w-5 h-5" />
-                <span>Next Contest Starts In</span>
+                <span>Event Status</span>
               </div>
-              <div className="grid grid-cols-4 gap-4">
-                {Object.entries(timeLeft).map(([unit, value]) => (
-                  <div key={unit} className="text-center">
-                    <div className="text-3xl md:text-4xl font-bold text-accent">
-                      {value.toString().padStart(2, '0')}
-                    </div>
-                    <div className="text-sm text-muted-foreground capitalize">
-                      {unit}
-                    </div>
-                  </div>
-                ))}
+              <div className="text-foreground">
+                The CodeCraft Championship has ended. Final results and rankings are available on the leaderboard. Thank you to all participants and volunteers.
               </div>
+              <div className="text-sm text-muted-foreground">Finalized on 6th November 2025</div>
             </div>
           </Card>
 
@@ -99,21 +91,23 @@ const Hero = () => {
               variant="hero" 
               size="lg" 
               className="text-lg px-8 py-6" 
-              onClick={() => window.open('https://forms.gle/GJAGoEi4SBKmnygj9', '_blank')}
+              onClick={() => {
+                navigate('/leaderboard');
+              }}
             >
-              <Users className="w-5 h-5" />
-              Register Now
+              <Trophy className="w-5 h-5" />
+              View Final Leaderboard
             </Button>
             <Button 
               variant="outline_tech" 
               size="lg" 
               className="text-lg px-8 py-6" 
               onClick={() => {
-                navigate('/leaderboard');
+                navigate('/about');
               }}
             >
-              <Trophy className="w-5 h-5" />
-              View Leaderboard
+              <Users className="w-5 h-5" />
+              Event Highlights
             </Button>
           </div>
 
@@ -127,7 +121,7 @@ const Hero = () => {
                   className="w-32 h-32 mx-auto rounded-lg"
                 />
                 <p className="text-sm text-muted-foreground">
-                  Scan for Quick Registration
+                  Event concluded — QR previously used for registration
                 </p>
               </div>
             </Card>
