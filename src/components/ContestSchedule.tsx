@@ -91,7 +91,7 @@ const contests: Array<{
     date: "6 November 2025", 
     time: "1:30 PM",
     duration: "60 mins",
-    status: "upcoming",
+    status: "completed",
     difficulty: "medium",
     confirmed: true
   }
