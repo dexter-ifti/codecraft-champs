@@ -1,0 +1,73 @@
+{
+    "models": [
+        {
+            "hacker_id": 22886462,
+            "rank": 1,
+            "score": 80,
+            "time_taken": 3700,
+            "hacker": "sajidjafri86",
+            "avatar": "https://hrcdn.net/s3_pub/hr-avatars/63ea1957-4ded-48c7-a4e9-9a5eee31dacd/150x150.png"
+        },
+        {
+            "hacker_id": 22410271,
+            "rank": 1,
+            "score": 80,
+            "time_taken": 5034,
+            "hacker": "akhlaqhusain",
+            "avatar": "https://hrcdn.net/s3_pub/hr-avatars/93afbbb8-53a6-4946-a2e7-00997f5bdd63/150x150.png"
+        },
+        {
+            "hacker_id": 22759075,
+            "rank": 1,
+            "score": 80,
+            "time_taken": 8702,
+            "hacker": "adeebhussain117",
+            "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg"
+        },
+        {
+            "hacker_id": 26103264,
+            "rank": 4,
+            "score": 60,
+            "time_taken": 4394,
+            "hacker": "husainabrar870",
+            "avatar": "https://hrcdn.net/s3_pub/hr-avatars/d82c2a5c-e076-4732-b87c-8c206fc37bc2/150x150.png"
+        },
+        {
+            "hacker_id": 27074458,
+            "rank": 4,
+            "score": 60,
+            "time_taken": 5682,
+            "hacker": "khushinak91",
+            "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg"
+        },
+        {
+            "hacker_id": 27029862,
+            "rank": 6,
+            "score": 22.22,
+            "time_taken": 2614,
+            "hacker": "Aabuzer",
+            "avatar": "https://hrcdn.net/s3_pub/hr-avatars/84198681-2998-4946-b708-aca54a05f0e5/150x150.png"
+        },
+        {
+            "hacker_id": 24579267,
+            "rank": 7,
+            "score": 1.41,
+            "time_taken": 3955,
+            "hacker": "amnahmad121",
+            "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg"
+        },
+        {
+            "hacker_id": 24662230,
+            "rank": 8,
+            "score": 0,
+            "time_taken": 0,
+            "hacker": "darakhshanifraq1",
+            "avatar": "https://d1ce3iv5vajdy.cloudfront.net/hackerrank/assets/gravatar.jpg"
+        }
+    ],
+    "page": 1,
+    "total": 8,
+    "current_hacker": null,
+    "available": true,
+    "self_display": true
+}
