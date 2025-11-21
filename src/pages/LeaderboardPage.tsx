@@ -1,7 +1,7 @@
 import Leaderboard from "@/components/Leaderboard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import leaderboardData from "@/data/Leaderboard_Rounds_3_7.json";
+import leaderboardData from "@/data/Leaderboard_Rounds_3_8.json";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -9,14 +9,16 @@ import { Link } from "react-router-dom";
 // Prepare round-wise data
 const participants = leaderboardData.models.map(p => ({
   ...p,
-  round3_score: p.round3_score || 0,
-  round4_score: p.round4_score || 0,
-  round5_score: p.round5_score || 0,
-  round6_score: p.round6_score || 0,
-  round7_score: p.round7_score || 0,
+  round3_score: (p as any).round3_score || 0,
+  round4_score: (p as any).round4_score || 0,
+  round5_score: (p as any).round5_score || 0,
+  round6_score: (p as any).round6_score || 0,
+  round7_score: (p as any).round7_score || 0,
+  round8_score: (p as any).round8_score || 0,
+  is_cheating: (p as any).is_cheating || false,
 }));
 
-const roundWise = (round: 1 | 2 | 3 | 4 | 5 | 6 | 7) => {
+const roundWise = (round: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8) => {
   const scoreKey = `round${round}_score` as const;
   const timeKey = `round${round}_time` as const;
   return participants
@@ -43,6 +45,7 @@ const round4 = roundWise(4);
 const round5 = roundWise(5);
 const round6 = roundWise(6);
 const round7 = roundWise(7);
+const round8 = roundWise(8);
 
 const LeaderboardPage = () => {
   return (
@@ -56,13 +59,14 @@ const LeaderboardPage = () => {
         <h1 className="text-4xl font-bold bg-gradient-primary bg-clip-text text-transparent">Leaderboard Center</h1>
         <p className="text-muted-foreground max-w-2xl">View cumulative and round-wise rankings. Cumulative ranks are based on total score across all rounds (time as tie-breaker). Round tabs show standalone performance.</p>
         <Tabs defaultValue="cumulative" className="w-full">
-          <TabsList className="grid grid-cols-6 max-w-3xl">
+          <TabsList className="grid grid-cols-7 max-w-4xl">
             <TabsTrigger value="cumulative">Cumulative</TabsTrigger>
             <TabsTrigger value="round3">Round 3</TabsTrigger>
             <TabsTrigger value="round4">Round 4</TabsTrigger>
             <TabsTrigger value="round5">Round 5</TabsTrigger>
             <TabsTrigger value="round6">Round 6</TabsTrigger>
             <TabsTrigger value="round7">Round 7</TabsTrigger>
+            <TabsTrigger value="round8">Round 8</TabsTrigger>
           </TabsList>
           <TabsContent value="cumulative">
             <Leaderboard />
@@ -81,6 +85,9 @@ const LeaderboardPage = () => {
           </TabsContent>
           <TabsContent value="round7">
             <RoundTable title="Round 7" data={round7} />
+          </TabsContent>
+          <TabsContent value="round8">
+            <RoundTable title="Round 8" data={round8} />
           </TabsContent>
         </Tabs>
       </div>
